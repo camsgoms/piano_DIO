@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piano Simulator</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+    <div class="container">
+
+        <header>
+            <h2>Virtual Piano</h2>
+            <div class="column volume-slider">
+                <span>Volume</span>
+                <input type="range" min="0" max="1" value="0.5" step="any" name="volume" id="volume">
+            </div>
+
+            <div class="column keys-check">
+                <span>Teclas</span>
+                <input type="checkbox" checked>
+            </div>
+        </header>
+
+        <ul class="piano-keys">
+            <li class="key white" data-key="a" aria-label="Tecla branca A"><span>a</span></li>
+            <li class="key black" data-key="w" aria-label="Tecla preta W"><span>w</span></li>
+            <li class="key white" data-key="s" aria-label="Tecla branca S"><span>s</span></li>
+            <li class="key black" data-key="e" aria-label="Tecla preta E"><span>e</span></li>
+            <li class="key white" data-key="d" aria-label="Tecla branca D"><span>d</span></li>
+            <li class="key black" data-key="f" aria-label="Tecla preta F"><span>f</span></li>
+            <li class="key white" data-key="t" aria-label="Tecla branca T"><span>t</span></li>
+            <li class="key black" data-key="g" aria-label="Tecla preta G"><span>g</span></li>
+            <li class="key white" data-key="y" aria-label="Tecla branca Y"><span>y</span></li>
+            <li class="key black" data-key="h" aria-label="Tecla preta H"><span>h</span></li>
+            <li class="key white" data-key="u" aria-label="Tecla branca U"><span>u</span></li>
+            <li class="key black" data-key="j" aria-label="Tecla preta J"><span>j</span></li>
+            <li class="key white" data-key="k" aria-label="Tecla branca K"><span>k</span></li>
+            <li class="key black" data-key="o" aria-label="Tecla preta O"><span>o</span></li>
+            <li class="key white" data-key="l" aria-label="Tecla branca L"><span>l</span></li>
+            <li class="key black" data-key="p" aria-label="Tecla preta P"><span>p</span></li>
+            <li class="key white" data-key=";" aria-label="Tecla branca ;"><span>;</span></li>
+        </ul>
+
+    </div>
+    
+    <script src="./src/scripts/engine.js" defer></script>
+</body>
+</html>
